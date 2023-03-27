@@ -44,17 +44,17 @@
 //1x1 = 1 ; 2x1 = 2; ……
 //2x1 = 2; 2x2 = 4; ……
 
-int tablede = 1;
+//int tablede = 1;
 
-for (int i = 1; i <= 5; i++)
-{
-    for (int multiplicateur = 1; multiplicateur <= 20; multiplicateur++)
-    {
-        Console.WriteLine($"{tablede} * {multiplicateur} = " + (tablede * multiplicateur));
+//for (int i = 1; i <= 5; i++)
+//{
+//    for (int multiplicateur = 1; multiplicateur <= 20; multiplicateur++)
+//    {
+//        Console.WriteLine($"{tablede} * {multiplicateur} = " + (tablede * multiplicateur));
 
-    }
-    tablede++;
-}
+//    }
+//    tablede++;
+//}
 
 #endregion
 
@@ -72,6 +72,51 @@ for (int i = 1; i <= 5; i++)
 
 #region Exercice 1.6 racine carrée  A FINIR
 //Bonus: Calculer la racine carré d’un nombre avec maximum 10 décimales (Math.Sqrt(x) ne peut être utilisée que pour vérifier la réponse),
+
+
+//Méthode : créer une boucle qui va tester le carré d'un nombre jusqu'à ce que ça matche avec le nombre choisi 
+
+{ Console.WriteLine("Entrez le nombre dont vous souhaitez la racine carrée");
+    double SquareUser = double.Parse(Console.ReadLine()!);
+    double racinechek = Math.Sqrt(SquareUser);
+    //préshot de l'affichage final 
+    //string racinecheckstring = (Math.Sqrt(SquareUser)).ToString("D10");
+
+    double carré;
+    for (double i = 0; i < racinechek; i++)
+    {
+        for (double j = 0; j < i; j++)
+        {
+            carré = Math.Pow(i, j);
+            Console.WriteLine(carré);
+        }
+
+    }
+    Console.WriteLine("sortie de boucle");
+
+}
+
+//Console.WriteLine(carré.ToString("10D");    
+
+//    for (double carré = 0; carré != SquareUser; carré++)
+//    {
+//        while (Math.Pow(carré,carré) != SquareUser)
+//        {
+//            carré = Math.Pow(carré, carré);
+//            Console.WriteLine(carré);
+//        }            
+
+//    }
+
+//Console.WriteLine("on sort de la boucle");
+
+
+    
+//Console.WriteLine($"La racine carrée de {SquareUser} est {}");
+//string SquareUserfinal = SquareUser.ToString("10D");
+
+
+
 
 
 #endregion
