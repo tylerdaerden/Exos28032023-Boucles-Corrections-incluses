@@ -82,6 +82,8 @@
     //préshot de l'affichage final 
     //string racinecheckstring = (Math.Sqrt(SquareUser)).ToString("D10");
 
+
+    //je peux faire une double boucle inside ( i=0 , j=0 ; i && j < 0 ; i++ , j++)
     double carré;
     for (double i = 0; i < racinechek; i++)
     {
