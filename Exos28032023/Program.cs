@@ -38,7 +38,7 @@
 
 #endregion
 
-#region Exercice 1.3 Nombres Premiers  A FINIR !
+#region Exercice 1.3 Nombres Premiers  A FINIR Voir soluce Thierry !
 //Grâce à une boucle « for », calculez les x premiers nombre premier
 
 //int x;
