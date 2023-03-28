@@ -1,7 +1,7 @@
 ﻿#region Exos Boucles
 
 #region Exercice 1.1  Fibonacci OK ! 
-//Calculer les 25 premiers nombres de la suite de Fibonacci
+////Calculer les 25 premiers nombres de la suite de Fibonacci
 //int nb1 = 0;
 //int nb2 = 1;
 
@@ -14,28 +14,69 @@
 //    nb1 = nb2;
 //    nb2 = nbfibo;
 
+//Console.ReadLine(); 
+
 //}
 
 #endregion
 
 #region Exercice 1.2 Factoriel OK ! 
-//Calculer le factoriel d’un nombre entré au clavier.
+////Calculer le factoriel d’un nombre entré au clavier.
 
 //Console.WriteLine("De quel nombre voulez vous calculer la factorielle ?  ");
-//int UserChoix = int.Parse(Console.ReadLine());
-//int factorielle = 1;
+//long UserChoix = long.Parse(Console.ReadLine()!);
+//long factorielle = 1;
 
-//for (int i = 1 ; i <= UserChoix ; i++)
+//for (long i = 1; i <= UserChoix; i++)
 //{
-//    factorielle*= i;
+//    factorielle *= i;
 //}
 
 //Console.WriteLine($"la Factorielle de {UserChoix} est {factorielle}");
+
+//Console.ReadLine();
 
 #endregion
 
 #region Exercice 1.3 Nombres Premiers  A FINIR !
 //Grâce à une boucle « for », calculez les x premiers nombre premier
+
+//int x;
+//do
+//{
+//    Console.WriteLine("Combien de nombres premiers souhaitez vous trouver ?");
+//}
+//while (!int.TryParse(Console.ReadLine(), out x));
+
+//Console.WriteLine($"nous allons afficher les {x} premiers nombres premiers ");
+//Thread.Sleep(2000); // juste pour le fun de jouer avec l'affichage , j'avoue 🕹
+//Console.Clear();
+//Thread.Sleep(1000);
+
+//Console.WriteLine($"voici les nombres premiers jusque {x} ");
+
+//for (int count = 0; count <= x; count++)
+//{
+//    bool estPremier = true;
+
+//    int sqrt = (int)Math.Sqrt(count);
+
+//    for (int diviseur = 2; diviseur <= sqrt && estPremier; diviseur++)
+//    {
+//        //Console.WriteLine($"count : {count} / diviseur : {diviseur}");
+//        if (count % diviseur == 0)
+//        {
+//            estPremier = false;
+//        }
+//    }
+
+//    if (estPremier && count > 1)
+//    {
+//        Console.WriteLine(count);
+//    }
+//}
+
+//Console.ReadLine();
 
 #endregion
 
@@ -46,13 +87,19 @@
 
 //int tablede = 1;
 
+////Parcours des tables dans 1ere boucle , incrémentation du multiplicateur dans 2ème boucle 
 //for (int i = 1; i <= 5; i++)
 //{
+//    Console.WriteLine($"Table de {i}");
+//    Console.WriteLine("____________________");
+
 //    for (int multiplicateur = 1; multiplicateur <= 20; multiplicateur++)
 //    {
-//        Console.WriteLine($"{tablede} * {multiplicateur} = " + (tablede * multiplicateur));
+//        Console.WriteLine($"|{tablede} * {multiplicateur} = {tablede * multiplicateur}");
 
 //    }
+//    Console.WriteLine("____________________");
+//    Console.WriteLine();
 //    tablede++;
 //}
 
@@ -62,7 +109,7 @@
 //À l’aide d’une boucle « for » comptez de 0, à 20,0 en augmentant de 0,1, en utilisant des doubles, et afficher la valeur à chaque itération.
 //Remarquez-vous quelque chose de particulier ?
 
-//for (double i = 00; i <=20.0; i=i+0.1)
+//for (double i = 00; i <= 20.0; i = i + 0.1)
 //{
 //    Console.WriteLine(i);
 //}
@@ -74,48 +121,48 @@
 //Bonus: Calculer la racine carré d’un nombre avec maximum 10 décimales (Math.Sqrt(x) ne peut être utilisée que pour vérifier la réponse),
 
 
-//Méthode : créer une boucle qui va tester le carré d'un nombre jusqu'à ce que ça matche avec le nombre choisi 
+////Méthode : créer une boucle qui va tester le carré d'un nombre jusqu'à ce que ça matche avec le nombre choisi 
 
-{ Console.WriteLine("Entrez le nombre dont vous souhaitez la racine carrée");
-    double SquareUser = double.Parse(Console.ReadLine()!);
-    double racinechek = Math.Sqrt(SquareUser);
-    //préshot de l'affichage final 
-    //string racinecheckstring = (Math.Sqrt(SquareUser)).ToString("D10");
+//{ Console.WriteLine("Entrez le nombre dont vous souhaitez la racine carrée");
+//    double SquareUser = double.Parse(Console.ReadLine()!);
+//    double racinechek = Math.Sqrt(SquareUser);
+//    //préshot de l'affichage final 
+//    //string racinecheckstring = (Math.Sqrt(SquareUser)).ToString("D10");
 
 
-    //je peux faire une double boucle inside ( i=0 , j=0 ; i && j < 0 ; i++ , j++)
-    double carré;
-    for (double i = 0; i < racinechek; i++)
-    {
-        for (double j = 0; j < i; j++)
-        {
-            carré = Math.Pow(i, j);
-            Console.WriteLine(carré);
-        }
-
-    }
-    Console.WriteLine("sortie de boucle");
-
-}
-
-//Console.WriteLine(carré.ToString("10D");    
-
-//    for (double carré = 0; carré != SquareUser; carré++)
+//    //je peux faire une double boucle inside ( i=0 , j=0 ; i && j < 0 ; i++ , j++)
+//    double carré;
+//    for (double i = 0; i < racinechek; i++)
 //    {
-//        while (Math.Pow(carré,carré) != SquareUser)
+//        for (double j = 0; j < i; j++)
 //        {
-//            carré = Math.Pow(carré, carré);
+//            carré = Math.Pow(i, j);
 //            Console.WriteLine(carré);
-//        }            
+//        }
 
 //    }
+//    Console.WriteLine("sortie de boucle");
 
-//Console.WriteLine("on sort de la boucle");
+//}
+
+////Console.WriteLine(carré.ToString("10D");    
+
+////    for (double carré = 0; carré != SquareUser; carré++)
+////    {
+////        while (Math.Pow(carré,carré) != SquareUser)
+////        {
+////            carré = Math.Pow(carré, carré);
+////            Console.WriteLine(carré);
+////        }            
+
+////    }
+
+////Console.WriteLine("on sort de la boucle");
 
 
-    
-//Console.WriteLine($"La racine carrée de {SquareUser} est {}");
-//string SquareUserfinal = SquareUser.ToString("10D");
+
+////Console.WriteLine($"La racine carrée de {SquareUser} est {}");
+////string SquareUserfinal = SquareUser.ToString("10D");
 
 
 
