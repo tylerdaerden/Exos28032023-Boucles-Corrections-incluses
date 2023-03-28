@@ -1,27 +1,28 @@
 ﻿#region Exos Boucles 28022023 ! 
 
 #region Exercice 1.1  Fibonacci OK ! 
-//Calculer les 25 premiers nombres de la suite de Fibonacci
-int nb1 = 0;
-int nb2 = 1;
+////Calculer les 25 premiers nombres de la suite de Fibonacci
+//int nb1 = 0;
+//int nb2 = 1;
 
-Console.WriteLine(nb1);
-Console.WriteLine(nb2);
-for (int i = 0; i < 23; i++) //on s'arrête plus tôt car nous avons les 2 premières valeurs
-{
-    int nbfibo = (nb1 + nb2);
-    Console.WriteLine(nbfibo);
-    nb1 = nb2;
-    nb2 = nbfibo;
-}
+//Console.WriteLine(nb1);
+//Console.WriteLine(nb2);
+//for (int i = 0; i < 23; i++) //on s'arrête plus tôt car nous avons les 2 premières valeurs
+//{
+//    int nbfibo = (nb1 + nb2);
+//    Console.WriteLine(nbfibo);
+//    nb1 = nb2;
+//    nb2 = nbfibo;
+//}
 
-Console.ReadLine();
+//Console.ReadLine();
 
 #endregion
 
 #region Exercice 1.2 Factoriel OK ! 
-////Calculer le factoriel d’un nombre entré au clavier.
+//Calculer le factoriel d’un nombre entré au clavier.
 
+//Ma version 👇👇👇
 //Console.WriteLine("De quel nombre voulez vous calculer la factorielle ?  ");
 //long UserChoix = long.Parse(Console.ReadLine()!);
 //long factorielle = 1;
