@@ -1,22 +1,21 @@
-﻿#region Exos Boucles
+﻿#region Exos Boucles 28022023 ! 
 
 #region Exercice 1.1  Fibonacci OK ! 
-////Calculer les 25 premiers nombres de la suite de Fibonacci
-//int nb1 = 0;
-//int nb2 = 1;
+//Calculer les 25 premiers nombres de la suite de Fibonacci
+int nb1 = 0;
+int nb2 = 1;
 
-//Console.WriteLine(nb1);
-//Console.WriteLine(nb2);
-//for (int i = 0; i < 23; i++) //on s'arrête plus tôt car nous avons les 2 premières valeurs
-//{
-//    int nbfibo = (nb1 + nb2);
-//    Console.WriteLine(nbfibo);
-//    nb1 = nb2;
-//    nb2 = nbfibo;
+Console.WriteLine(nb1);
+Console.WriteLine(nb2);
+for (int i = 0; i < 23; i++) //on s'arrête plus tôt car nous avons les 2 premières valeurs
+{
+    int nbfibo = (nb1 + nb2);
+    Console.WriteLine(nbfibo);
+    nb1 = nb2;
+    nb2 = nbfibo;
+}
 
-//Console.ReadLine(); 
-
-//}
+Console.ReadLine();
 
 #endregion
 
@@ -78,6 +77,55 @@
 
 //Console.ReadLine();
 
+// méthode trouvée pour voir number is prime or not
+//int x ;
+//do
+//{
+//    Console.WriteLine("Quel nombre voulez vous tester?");
+//}
+//while (!int.TryParse(Console.ReadLine(), out x));
+
+//int a = 0;
+//for (int i = 1; i <= x; i++)
+//{
+//    if (x % i == 0)
+//    {
+//        a++;
+//    }
+//}
+//if (a == 2)
+//{
+//    Console.WriteLine("{0} est premier", x);
+//}
+//else
+//{
+//    Console.WriteLine("n'est pas premier");
+//}
+//Console.ReadLine();
+
+//int x;
+//do
+//{
+//    Console.WriteLine("Quel nombre voulez vous tester?");
+//}
+//while (!int.TryParse(Console.ReadLine(), out x));
+
+//bool EstPremier  = true ;
+
+//for (int CompteBoucle = 0; CompteBoucle < x; CompteBoucle++)
+//{
+//    for (int Div2 = 2; j < 10; j++)
+//    {
+//        if ()
+
+//    }
+
+//    CompteBoucle ++;
+
+//}
+
+
+
 #endregion
 
 #region Exercice 1.4 Tables multiplication OK !
@@ -88,20 +136,21 @@
 //int tablede = 1;
 
 ////Parcours des tables dans 1ere boucle , incrémentation du multiplicateur dans 2ème boucle 
-//for (int i = 1; i <= 5; i++)
+//for (int i = 1; i <= 20; i++)
 //{
-//    Console.WriteLine($"Table de {i}");
-//    Console.WriteLine("____________________");
 
-//    for (int multiplicateur = 1; multiplicateur <= 20; multiplicateur++)
+//    for (int multiplicateur = 1; multiplicateur <= 5; multiplicateur++)
 //    {
-//        Console.WriteLine($"|{tablede} * {multiplicateur} = {tablede * multiplicateur}");
+//        Console.Write($"{tablede} * {multiplicateur} = {tablede * multiplicateur}");
+//        Console.Write("     ");
 
 //    }
-//    Console.WriteLine("____________________");
+//    Console.WriteLine();
 //    Console.WriteLine();
 //    tablede++;
 //}
+
+//Console.ReadLine();
 
 #endregion
 
