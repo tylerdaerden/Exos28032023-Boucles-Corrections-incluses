@@ -167,7 +167,7 @@
 
 #endregion
 
-#region Exercice 1.6 racine carrée  A FINIR
+#region Exercice 1.6 racine carrée  Checker CORRECTION THIERRY !
 //Bonus: Calculer la racine carré d’un nombre avec maximum 10 décimales (Math.Sqrt(x) ne peut être utilisée que pour vérifier la réponse),
 
 
